@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="logo.png" alt="spotify" /><span>Spotify</span>
+        </li>
+        <li>Home</li>
+        <li>Learning Values</li>
+      </ul>
+    </nav>
+    <div class="container">
+      
+        <h1>Best of NCS-No Copyright Songs</h1>
+        <div class="songitem-container">
+          
+        </div>
+      </div>
+      <div class="songbanner"></div>
+    </div>
+
+    <div class="learning">
+      <h1>Things that I learn From This Dummyy Spotify :</h1>
+      <ul>
+        <li><span class="main">LoadedDomContent :</span> <span class="detail"> There are some objects like audio object for using propoerties like duration , currentTime you have to make an event listner to audio of LoadedDomContent</span></li>
+        <li><span class="main">" .closest " for choosing </span>
+          <span class="detail">
+            It is used to select the nearest element with the given class/tagname 
+            <br>used like this :  <b>  let songItem = event.target.closest(".songitem");</b>   
+          </span>
+        </li>
+        <li><span class="main">timeupdate :</span> <span class="detail">It is used to check whether the the file inside audio element is changing or not, I used it to sync progreesbar with song timming </span></li>
+      </ul>
+    </div>
+
+
+    <div class="bottom">
+      <div class="songInfo">
+        <img src="playing.gif" id="playgif" style="width: 42px" alt=""  />
+        <p id="playsong">Select A song</p>
+      </div>
+      <input type="range" name="range" id="myprogressbar" min="0" max="100"  value="0" step="0.1"/>
+      <div class="icons">
+        <svg id="previous" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M220-240v-480h80v480h-80Zm520 0L380-480l360-240v480Zm-80-240Zm0 90v-180l-136 90 136 90Z"/></svg>
+        <svg id="play"  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m380-300 280-180-280-180v360ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
+        <!-- both -->
+
+        <svg id="pause"  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M360-320h80v-320h-80v320Zm160 0h80v-320h-80v320ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>        <svg id="next" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M660-240v-480h80v480h-80Zm-440 0v-480l360 240-360 240Zm80-240Zm0 90 136-90-136-90v180Z"/></svg>
+        <p id="timming"></p>
+      </div>
+    </div>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
+
+
